@@ -29,6 +29,12 @@ const TeamAccountMenu = ({ currentAccount }: Props) => {
         isActive: router.pathname.includes(
           "/dashboard/teams/[accountId]/settings"
         ),
+      }, {
+        label: t("teamAccountMenu.audit"),
+        href: `/dashboard/teams/${currentAccount.account_id}/audit`,
+        isActive: router.pathname.includes(
+          "/dashboard/teams/[accountId]/audit"
+        ),
       });
     }
     return items;

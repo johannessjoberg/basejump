@@ -70,13 +70,28 @@
   },
   "teamAccountMenu": {
     "dashboard": "Dashboard",
-    "settings": "Settings"
+    "settings": "Settings",
+    "audit": "Audit"
   },
   "profile": {
     "pageTitle": "Profile"
   },
   "billing": {
     "pageTitle": "Billing"
+  },
+  "teamAccountAudit": {
+    "pageTitle": "Audit",
+    "unknown": "Unknown",
+    "entities": {
+      "accounts": "Account",
+      "user": "User",
+      "invitation": "Invitation"
+    },
+    "operations":{
+      "create": "Create",
+      "update": "Update",
+      "delete": "Delete"
+    }
   },
   "teamAccountSettings": {
     "pageTitle": "Settings",

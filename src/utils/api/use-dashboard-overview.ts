@@ -21,6 +21,8 @@ export default function useDashboardOverview(
   return useQuery<UseDashboardOverviewResponse, Error>(
     ["dashboardOverview", user?.id],
     async () => {
+      if (!user) return null
+
       const { data, error } = await supabaseClient
         .from("accounts")
         .select(
